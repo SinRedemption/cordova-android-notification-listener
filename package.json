@@ -4,8 +4,8 @@
   "cordova_name": "cordova-android-notification-listener",
   "description": "安卓系统消息监听服务插件",
   "license": "Apache 2.0",
-  "repo": "https://github.com/SinRedemption/NotificationListener-cordova",
-  "issue": "https://github.com/SinRedemption/NotificationListener-cordova/issues",
+  "repo": "https://github.com/SinRedemption/cordova-android-notification-listener",
+  "issue": "https://github.com/SinRedemption/cordova-android-notification-listener/issues",
   "keywords": [
     "notification",
     "listener",

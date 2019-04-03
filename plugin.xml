@@ -9,8 +9,8 @@
     <license>Apache 2.0</license>
     <keywords>notification, listener, android, cordova</keywords>
 
-    <repo>https://github.com/SinRedemption/NotificationListener-cordova</repo>
-    <issue>https://github.com/SinRedemption/NotificationListener-cordova/issues</issue>
+    <repo>https://github.com/SinRedemption/cordova-android-notification-listener</repo>
+    <issue>https://github.com/SinRedemption/cordova-android-notification-listener/issues</issue>
 
     <engines>
         <engine name="cordova" version=">=3.1.0" />
@@ -23,12 +23,8 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AndroidNotificationListener">
-                <param name="android-package" value="cordova.android.notification.listener.AndroidNotificationListenerPluginEntry"/>
+                <param name="android-package" value="com.skynet.member.cordova.plugins.android.notifications.listener.AndroidNotificationListenerPluginEntry"/>
             </feature>
-        </config-file>
-
-        <config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
