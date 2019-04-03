@@ -11,6 +11,7 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
@@ -30,7 +31,7 @@ import java.util.List;
  * Android
  * 消息监听服务参见：//http://developer.android.com/reference/android/service/notification/NotificationListenerService.html
  */
-public class NotificationListenerService2 extends android.service.notification.NotificationListenerService {
+public class NotificationListenerService2 extends NotificationListenerService {
   private static final String ACTION_NOTIFICATION_LISTENER_SETTINGS = "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS";
 
   private static final String CHECK_OP_NO_THROW = "checkOpNoThrow";

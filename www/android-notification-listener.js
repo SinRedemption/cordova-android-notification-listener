@@ -5,6 +5,6 @@ module.exports = {
   listen: function(success, failure) {
     console.log("初始化 AndroidNotificationListener");
     
-    cordova.exec(success, failure, "com.skynet.member.cordova.plugins.android.notifications.listener.AndroidNotificationListenerPluginEntry", "listen", []);
+    cordova.exec(success, failure, "AndroidNotificationListenerPluginEntry", "listen", []);
   }
 };

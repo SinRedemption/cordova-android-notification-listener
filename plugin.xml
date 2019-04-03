@@ -16,14 +16,14 @@
         <engine name="cordova" version=">=3.1.0" />
     </engines>
 
-    <js-module src="www/android-notification-listener.js" name="AndroidNotificationListener">
+    <js-module src="www/android-notification-listener.js" name="AndroidNotificationListenerPluginEntry">
         <clobbers target="cordova.plugins.androidNotificationListener" />
     </js-module>
 
     <platform name="android">
         <!--资源配置文件-->
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="AndroidNotificationListener">
+            <feature name="AndroidNotificationListenerPluginEntry">
                 <param name="android-package" value="com.skynet.member.cordova.plugins.android.notifications.listener.AndroidNotificationListenerPluginEntry"/>
             </feature>
         </config-file>
