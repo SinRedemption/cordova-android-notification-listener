@@ -1,4 +1,4 @@
-# NotificationListenerService plugin for Cordova
+# AndroidNotificationServiceListener plugin for Cordova
 
 This is an implementation of the
 [NotificationListenerService in Android](https://developer.android.com/reference/android/service/notification/NotificationListenerService.html)
@@ -10,13 +10,11 @@ Note: This plugin doesn't work for IOS or Windows Phone, feel free to create a p
 
 ## How to install
 
-    cordova plugin add https://github.com/coconauts/NotificationListener-cordova
+    cordova plugin add https://github.com/SinRedemption/cordova-android-notification-listener
 
 ## Enable notification listener service
 
 This service requires an special permission that must be enabled from settings on Android (Settings > Notifications > Notification access)
-
-![](/settings.jpg)
 
 Note: The app requires the following permission in your Manifest file on Android, which will be added automatically:
 
@@ -40,7 +38,7 @@ var app = {
     onDeviceReady: function() {
        console.log("Device ready");
 
-       notificationListener.listen(function(n){
+       window.androidNotificationListener.listen(function(n){
          console.log("Received notification " + JSON.stringify(n) );
        }, function(e){
          console.log("Notification Error " + e);
@@ -49,8 +47,6 @@ var app = {
 };
 app.initialize();
 ```
-
-For a full example, please see our [WatchDuino2 repository](https://github.com/coconauts/watchduino2-companion-app)
 
 ## Sample output
 ```
