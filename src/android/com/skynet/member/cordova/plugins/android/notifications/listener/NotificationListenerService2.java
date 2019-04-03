@@ -30,13 +30,13 @@ import java.util.List;
  * Android
  * 消息监听服务参见：//http://developer.android.com/reference/android/service/notification/NotificationListenerService.html
  */
-public class NotificationListenerService1 extends android.service.notification.NotificationListenerService {
+public class NotificationListenerService2 extends android.service.notification.NotificationListenerService {
   private static final String ACTION_NOTIFICATION_LISTENER_SETTINGS = "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS";
 
   private static final String CHECK_OP_NO_THROW = "checkOpNoThrow";
   private static final String OP_POST_NOTIFICATION = "OP_POST_NOTIFICATION";
 
-  private static final String TAG = NotificationListenerService1.class.getSimpleName();
+  private static final String TAG = NotificationListenerService2.class.getSimpleName();
 
   private static final String PKG_WHITE_LIST = "com.google.android.googlequicksearchbox";
 
@@ -177,7 +177,7 @@ public class NotificationListenerService1 extends android.service.notification.N
    */
   static void toggleNotificationListenerService(Context context) {
     PackageManager pm = context.getPackageManager();
-    ComponentName thisComponent = new ComponentName(context, NotificationListenerService1.class);
+    ComponentName thisComponent = new ComponentName(context, NotificationListenerService2.class);
 
     pm.setComponentEnabledSetting(thisComponent, PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
         PackageManager.DONT_KILL_APP);
