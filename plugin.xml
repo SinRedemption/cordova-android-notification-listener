@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    id="cordova-android-notification-listener" 
+    version="0.0.2">
+
+    <name>cordova-android-notification-listener</name>
+    <description>Cordova Notification listener Plugin for Android</description>
+    <license>Apache 2.0</license>
+    <keywords>notification, listener, android, cordova</keywords>
+
+    <repo>https://github.com/SinRedemption/NotificationListener-cordova</repo>
+    <issue>https://github.com/SinRedemption/NotificationListener-cordova/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.1.0" />
+    </engines>
+
+    <js-module src="www/android-notification-listener.js" name="AndroidNotificationListener">
+        <clobbers target="cordova.plugins.androidNotificationListener" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AndroidNotificationListener">
+                <param name="android-package" value="cordova.android.notification.listener.AndroidNotificationListenerPluginEntry"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <service 
+                android:label="@string/app_name" 
+                android:name="com.skynet.member.cordova.plugins.android.notifications.listener.NotificationListenerService2" 
+                android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+                <intent-filter>
+                    <action android:name="android.service.notification.NotificationListenerService"></action>
+                </intent-filter>
+            </service>
+        </config-file>
+
+        <source-file 
+            src="src/android/com/skynet/member/cordova/plugins/android/notifications/listener/NotificationListenerService2.java" 
+            target-dir="src/com/skynet/member/cordova/plugins/android/notifications/listener"/>
+        <source-file 
+            src="src/android/com/skynet/member/cordova/plugins/android/notifications/listener/AndroidNotificationListenerPluginEntry.java" 
+            target-dir="src/com/skynet/member/cordova/plugins/android/notifications/listener"/>
+
+    </platform>
+
+</plugin>
