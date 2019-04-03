@@ -17,7 +17,7 @@
     </engines>
 
     <js-module src="www/android-notification-listener.js" name="AndroidNotificationListenerPluginEntry">
-        <clobbers target="cordova.plugins.androidNotificationListener" />
+        <clobbers target="plugins.androidNotificationListener" />
     </js-module>
 
     <platform name="android">
