@@ -48,14 +48,24 @@ var app = {
 app.initialize();
 ```
 
+And in the android activity, you have to do like this
+
+```
+// start service
+startService(new Intent(this, NotificationListenerService3.class));
+
+// acquire service permission
+NotificationListenerService3.acquireService(this);
+```
+
 ## Sample output
 ```
 Received notification
 {
-  "title":"Chuck Norris",
-  "package":"com.google.android.talk",
-  "text":"Hello world",
-  "textLines":""
+  "title": "飞迈",
+  "package": "com.ja.xman",
+  "text": "Bla...Bla...",
+  "textLines": ""
 }
 ```
 

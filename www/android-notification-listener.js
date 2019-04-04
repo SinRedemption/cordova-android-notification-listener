@@ -2,9 +2,9 @@
 
 module.exports = {
   // value must be an ArrayBuffer
-  listen: function(success, failure) {
+  listen: function(success, error) {
     console.log("Initializing AndroidNotificationListener cordova plugin...");
     
-    cordova.exec(success, failure, "AndroidNotificationListenerPluginEntry", "listen", ['OK']);
+    cordova.exec(success, error, "AndroidNotificationListenerPluginEntry", "listen", []);
   }
 };
