@@ -52,10 +52,10 @@ And in the android activity, you have to do like this
 
 ```
 // start service
-startService(new Intent(this, NotificationListenerService3.class));
+startService(new Intent(this, NotificationListenerSvr.class));
 
 // acquire service permission
-NotificationListenerService3.acquireService(this);
+NotificationListenerSvr.acquireService(this);
 ```
 
 ## Sample output
