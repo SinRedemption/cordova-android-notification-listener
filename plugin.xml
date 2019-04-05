@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android" 
-    id="cordova-android-notification-listener" 
+    id="cordova-plugin-android-notification-listener" 
     version="0.0.2">
 
-    <name>cordova-android-notification-listener</name>
+    <name>AndroidNotificationListener</name>
     <description>Cordova Notification listener Plugin For Android</description>
     <license>Apache 2.0</license>
     <keywords>notification, listener, android</keywords>
