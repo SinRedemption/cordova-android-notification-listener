@@ -32,16 +32,16 @@
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <service 
                 android:label="@string/app_name" 
-                android:name="com.skynet.member.cordova.plugins.android.notifications.listener.NotificationListenerService" 
+                android:name="com.skynet.member.cordova.plugins.android.notifications.listener.NotificationListenerSvr" 
                 android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
                 <intent-filter>
-                    <action android:name="android.service.notification.NotificationListenerService"></action>
+                    <action android:name="android.service.notification.NotificationListenerSvr"></action>
                 </intent-filter>
             </service>
         </config-file>
 
         <source-file 
-            src="src/NotificationListenerService.java" 
+            src="src/NotificationListenerSvr.java" 
             target-dir="src/com/skynet/member/cordova/plugins/android/notifications/listener"/>
         <source-file 
             src="src/AndroidNotificationListenerPluginEntry.java" 

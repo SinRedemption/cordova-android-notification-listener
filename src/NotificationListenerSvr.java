@@ -31,7 +31,7 @@ import java.util.List;
  * Android
  * 消息监听服务参见：//http://developer.android.com/reference/android/service/notification/NotificationListenerService.html
  */
-public class NotificationListenerService extends NotificationListenerService {
+public class NotificationListenerSvr extends NotificationListenerService {
   private static final String ACTION_NOTIFICATION_LISTENER_SETTINGS = "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS";
 
   private static final String CHECK_OP_NO_THROW = "checkOpNoThrow";
