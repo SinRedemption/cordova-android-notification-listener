@@ -44,7 +44,7 @@
             src="src/NotificationListenerService.java" 
             target-dir="src/com/skynet/member/cordova/plugins/android/notifications/listener"/>
         <source-file 
-            src="src/androidAndroidNotificationListenerPluginEntry.java" 
+            src="src/AndroidNotificationListenerPluginEntry.java" 
             target-dir="src/com/skynet/member/cordova/plugins/android/notifications/listener"/>
 
     </platform>
