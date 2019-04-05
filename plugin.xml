@@ -4,7 +4,7 @@
     id="cordova-plugin-android-notification-listener" 
     version="0.0.2">
 
-    <name>AndroidNotificationListener</name>
+    <name>cordova-plugin-android-notification-listener</name>
     <description>Cordova Notification listener Plugin For Android</description>
     <license>Apache 2.0</license>
     <keywords>notification, listener, android</keywords>
