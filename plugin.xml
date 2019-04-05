@@ -35,7 +35,7 @@
                 android:name="com.skynet.member.cordova.plugins.android.notifications.listener.NotificationListenerSvr" 
                 android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
                 <intent-filter>
-                    <action android:name="android.service.notification.NotificationListenerSvr"></action>
+                    <action android:name="android.service.notification.NotificationListenerService"></action>
                 </intent-filter>
             </service>
         </config-file>
